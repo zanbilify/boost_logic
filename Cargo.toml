@@ -1,0 +1,18 @@
+[package]
+name = "boost_logic"
+description = "Boost C++ library boost_logic packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_logic"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_logic"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_config = { version = "0.1.0", path = "../boost_config" }
+boost_core = { version = "0.1.0", path = "../boost_core" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
